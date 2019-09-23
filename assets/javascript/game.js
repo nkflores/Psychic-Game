@@ -1,8 +1,11 @@
-var letters = ["a", "b", "c"];
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
+"j", "k", "l", "m", "n", "o", "p", "q", "r", "s", 
+"t", "u", "v", "w", "x", "y", "z"];
 
 var guessedLetters = [];
 
 var letterToGuess = null;
+//var letterToGuess = ["a", "e", "i", "o", "u"];
 
 var guessesLeft = 9;
 
@@ -18,7 +21,7 @@ var updateLetterToGuess = function() {
 };
 
 var updateGuessesSoFar = function() {
-  document.querySelector("#guesses-so-far").innerHTML = guessedLetters.join(", ");
+  document.querySelector("#your-guesses").innerHTML = guessedLetters.join(", ");
 };
 
 var reset = function() {
